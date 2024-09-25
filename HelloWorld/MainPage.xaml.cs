@@ -40,7 +40,7 @@ namespace HelloWorld
             var dialog = new ContentDialog()
             {
                 Content = "Hola Mundo!",
-                CloseButtonText = "Cerrarr",
+                CloseButtonText = "Cerrar",
                 CornerRadius = new CornerRadius(8)
             };
             await dialog.ShowAsync();
