@@ -28,9 +28,21 @@ namespace HelloWorld
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Muestra un dialog diciendo hola mundo
+        /// pre: none
+        /// post: none
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new MessageDialog("Hola Mundo!");
+            var dialog = new ContentDialog()
+            {
+                Content = "Hola Mundo!",
+                CloseButtonText = "Cerrar",
+                CornerRadius = new CornerRadius(8)
+            };
             await dialog.ShowAsync();
         }
     }
