@@ -30,7 +30,7 @@ namespace HelloWorld
 
         /// <summary>
         /// Muestra un dialog diciendo hola mundo
-        /// pre: auri
+        /// pre: none
         /// post: none
         /// </summary>
         /// <param name="sender"></param>
